@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    transition:  all 2s ease;
+}
+a {
+    text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(21, 24, 38);
+    color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: lightgray;
+    gap: 1rem;
+}
+nav a {
+    color: lightgray;
+}
+section h2 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.presentation {
+    background-color: rgb(234, 72, 72);
+    display: flex;
+    justify-content: center;
+}
+
+.home_png {
+    width: 200px;
+}
+
+.pres_box {
+    text-align: center;
+    color: white;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.portfolio img {
+    width: 200px;
+}
+.portfolio_box {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.about {
+    background-color: rgb(234, 72, 72);
+    color:  white;
+    padding: 2rem;
+    text-align: center;
+}
+.about_box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.about_box p {
+    width: 10rem;
+
+    text-align: justify;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin-bottom:  4rem;
+    
+}
+.contact_box {
+    width: 30rem;
+    display: flex;
+    margin: auto;
+
+}
+.contact_box form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: auto;
+    
+}
+form input,form textarea {
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+form input:active,form textarea:active,form input:focus,form textarea:focus  {
+    border: none;
+    border-bottom: 2px solid rgb(234, 72, 72);
+    outline: none;
+}
+form a {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    color: white;
+    background-color:rgb(234, 72, 72) ;
+    border-radius: 3px;
+
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(21, 24, 38);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.icons {
+    display: flex;
+    gap: 1rem;
+
+}
+.icons i {
+    transform: scale(1.5);
+    margin:auto;
+}
+
+
+footer p {
+    width: 15rem;
+    text-align: justify;
+}
+.location, .around_web, .about_freelance{
+    text-align: center;
+}
+.location h3, .around_web h3, .about_freelance h3{
+    color: rgb(234, 72, 72) ;
+}
+.copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 760px) and (max-width: 900px) {
+    .portfolio_box{
+        width: 600px;
+     }
+     .portfolio img {
+         width: 200px;
+     }
+    footer{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .location , .around_web , .about_freelance {
+        text-align: center;
+        margin: auto;
+    } 
+    .icons i {
+        transform: scale(1.2);
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 0) and (max-width: 720px) {
+    .portfolio_box{
+        width: 50%;
+     }
+     .portfolio img {
+         width: 200px;
+     }
+     footer{
+         flex-direction: column;
+         height: fit-content;
+     }
+     .location , .around_web , .about_freelance {
+         text-align: center;
+         margin: auto;
+     } 
+     .icons i {
+         transform: scale(1.2);
+         margin: 0;
+     }
+     .contact_box {
+        width: 10rem;
+        margin: 0;
+    }
+
+}
